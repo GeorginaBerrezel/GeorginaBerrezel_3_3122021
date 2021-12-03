@@ -72,6 +72,7 @@ section {
   background-color: #9356DC;
   border-radius: 50px;
   color: #fff;
+  display: flex;
   margin: 20px 20px 20px -30px;
   padding: 5px;
   width: 10px;
@@ -94,6 +95,17 @@ section {
 .restaurant {
   background-color: #eaeaea;
   padding: 30px;
+}
+
+/*PAGE MENU*/
+.cover_menu {
+  height: 200px;
+  width: 100%;
+}
+
+.cover_menu img {
+  width: 100%;
+  object-fit: cover;
 }
 
 /* Mobile.css
@@ -161,8 +173,9 @@ button {
 }
 .restaurant_card img {
   object-fit: cover;
+  object-position: top;
   width: 100%;
-  height: 120px;
+  height: 200px;
   border-radius: 20px 20px 0 0;
 }
 
@@ -178,18 +191,22 @@ button {
 
 .restaurant_bottom {
   display: flex;
+  padding: 0 20px 0 20px;
+  height: 80px;
 }
 
 .restaurant_icone {
   align-items: center;
   position: relative;
-  right: auto;
+  /*right: auto;*/
 }
 
 .restaurant_icone i {
+  text-align: right;
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
+  font-size: 2rem;
 }
 
 .restaurant_icone .heart-fill {
@@ -199,6 +216,7 @@ button {
 }
 .restaurant_icone .heart-fill:hover .heart-fill {
   transform: scale(1);
+  cursor: pointer;
 }
 
 .footer_ohmyfood {

@@ -70,6 +70,7 @@ section {
     background-color: $violet_number_icone;
     border-radius: 50px;
     color: #fff;
+    display: flex;
     margin: 20px 20px 20px -30px;
     padding: 5px;
     width: 10px;
@@ -92,4 +93,16 @@ section {
 .restaurant {
     background-color: $gris_background;
     padding: 30px;
+}
+
+/*PAGE MENU*/
+
+.cover_menu {
+    height: 200px;
+    width: 100%;
+}
+
+.cover_menu img {
+    width: 100%;
+    object-fit: cover;  
 }
