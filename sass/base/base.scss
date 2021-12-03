@@ -61,7 +61,7 @@ nav {
 }
 
 section {
-    margin: 0 30px 0 30px
+    /*margin: 0 30px 0 30px*/
 }
 
 
@@ -76,6 +76,10 @@ section {
     height: 10px;
 }
 
+.fonctionnement {
+    margin: 0 30px 0 30px
+}
+
 .fonctionnement_icone {
     color: $gris_buttons_icone;
     margin-right: 10px;
@@ -87,5 +91,5 @@ section {
 
 .restaurant {
     background-color: $gris_background;
-    margin-bottom: 50px;
+    padding: 30px;
 }

@@ -64,7 +64,7 @@ nav {
 }
 
 section {
-  margin: 0 30px 0 30px;
+  /*margin: 0 30px 0 30px*/
 }
 
 .number_icone {
@@ -78,6 +78,10 @@ section {
   height: 10px;
 }
 
+.fonctionnement {
+  margin: 0 30px 0 30px;
+}
+
 .fonctionnement_icone {
   color: #7e7e7e;
   margin-right: 10px;
@@ -89,7 +93,7 @@ section {
 
 .restaurant {
   background-color: #eaeaea;
-  margin-bottom: 50px;
+  padding: 30px;
 }
 
 /* Mobile.css
@@ -111,8 +115,10 @@ section {
   }
 }
 button {
-  border-radius: 25px;
+  border-radius: 30px;
+  font-size: 1rem;
   padding: 0px 20px 0 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.125);
 }
 
 .button_explorer {
@@ -121,22 +127,28 @@ button {
   color: #fff;
   cursor: pointer;
 }
+.button_explorer:hover {
+  background: linear-gradient(150deg, #ffa2e5, #a375d9);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: 0, 5s;
+}
 
 .button_fonctionnement {
   align-items: center;
   background-color: #f6f6f6;
   border-radius: 20px;
   border: none;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.125);
   display: flex;
   margin: 0 0 20px 0;
   width: 100%;
   text-align: center;
   cursor: pointer;
 }
-
 .button_fonctionnement:hover {
   background-color: #f5edff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: 1s;
 }
 
 .restaurant_card {
@@ -144,20 +156,22 @@ button {
   border-radius: 20px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.125);
   margin-bottom: 20px;
+  position: relative;
   width: 100%;
 }
 .restaurant_card img {
   object-fit: cover;
   width: 100%;
-  height: 100px;
+  height: 120px;
   border-radius: 20px 20px 0 0;
 }
 
 .bagde_nouveau {
   background-color: #99e2d0;
+  border-radius: 3px;
   color: #008766;
-  top: 730px;
-  left: 220px;
+  top: 15px;
+  right: 10px;
   padding: 0 5px 0 5px;
   position: absolute;
 }
@@ -165,9 +179,26 @@ button {
 .restaurant_bottom {
   display: flex;
 }
-.restaurant_bottom .restaurant_icone {
+
+.restaurant_icone {
   align-items: center;
+  position: relative;
   right: auto;
+}
+
+.restaurant_icone i {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.restaurant_icone .heart-fill {
+  transform: scale(0);
+  transition: 0.5s;
+  color: linear-gradient(150deg, #FF79DA, #9356DC);
+}
+.restaurant_icone .heart-fill:hover .heart-fill {
+  transform: scale(1);
 }
 
 .footer_ohmyfood {
@@ -175,23 +206,27 @@ button {
   color: #fff;
   padding: 20px;
 }
-.footer_ohmyfood .logo_ohmyfood {
+
+.logo_ohmyfood {
   color: #fff;
 }
-.footer_ohmyfood .footer_proposer {
+
+.footer_proposer {
   align-items: center;
   display: flex;
 }
-.footer_ohmyfood .footer_icone {
+
+.footer_icone {
   padding-right: 10px;
 }
-.footer_ohmyfood a {
+
+a {
   cursor: pointer;
   color: #fff;
   line-height: normal;
   text-decoration: none;
 }
-.footer_ohmyfood a:hover {
+a:hover {
   color: #7e7e7e;
 }
 
