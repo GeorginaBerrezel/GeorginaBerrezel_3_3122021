@@ -1,0 +1,34 @@
+.restaurant_card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.125);
+    margin-bottom: 20px;
+    width: 100%;
+
+    & img {
+        object-fit: cover;
+        width: 100%;
+        height: 100px;
+        border-radius: 20px 20px 0 0;
+    }
+}
+
+.bagde_nouveau {
+    background-color: $vert_badge_fond;
+    color: $vert_bagde_text;
+    top: 730px;
+    left: 220px;
+    padding: 0 5px 0 5px;
+    position: absolute;
+}
+
+.restaurant_bottom {
+    display: flex;
+
+    .restaurant_icone {
+        align-items: center;
+        right: auto;
+    }
+}
+
+

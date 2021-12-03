@@ -1,0 +1,31 @@
+//blocs BEM qui sont plus indépendants, comme les boutons
+
+button {
+    border-radius: 25px;
+    padding: 0px 20px 0 20px;
+}
+
+.button_explorer {
+    background: linear-gradient(150deg, #FF79DA, #9356DC);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.button_fonctionnement {
+    align-items: center;
+    background-color: $gris_buttons;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    display: flex;
+    margin: 0 0 20px 0;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button_fonctionnement:hover {
+    background-color: $violet_hover_buttons;
+}

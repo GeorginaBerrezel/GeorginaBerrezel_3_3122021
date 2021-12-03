@@ -1,0 +1,29 @@
+.footer_ohmyfood {
+    background-color: $gris_footer;
+    color: #fff;
+    padding: 20px;
+
+        .logo_ohmyfood {
+            color: #fff;
+        }
+
+        .footer_proposer {
+            align-items: center;
+            display: flex;
+            }
+
+        .footer_icone {
+            padding-right: 10px;
+        }
+
+        a {     
+            cursor: pointer;
+            color: #fff;
+            line-height: normal;
+            text-decoration: none;    
+
+            &:hover {
+            color: $gris_buttons_icone;
+            }
+        }
+}

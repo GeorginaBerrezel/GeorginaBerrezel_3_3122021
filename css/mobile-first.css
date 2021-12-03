@@ -1,0 +1,20 @@
+/* Mobile.css
+---------
+*/
+@media all and (max-width: 767.5px) {
+  .logo_ohmyfood {
+    /* align-content: center;
+        background-color: #fff;
+        padding: 20px;*/
+  }
+  .localisation {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #eaeaea;
+    padding: 5px;
+    margin-top: 4px;
+  }
+}
+/*# sourceMappingURL=mobile-first.css.map */

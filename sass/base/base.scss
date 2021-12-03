@@ -1,0 +1,91 @@
+//la police de caractères et les normes que vous voulez appliquer sur tout votre site, telles que le box-sizing ;
+
+/* GENERALE */
+h1 {
+    font-family: $font_family2;
+}
+
+h2 {
+    font-family: $font_family2;
+}
+
+h3 {
+    font-weight: 900;
+}
+
+h4 {
+    font-weight: 100;
+}
+
+h5 {
+    font-weight: 500;
+}
+
+p {
+    font-weight: 100;
+}
+
+body {
+    font-family: $font_family;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    padding: 20px;
+    text-align: center;
+}
+
+.localisation {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background-color: $gris_background;
+    padding: 0;
+    margin-top: 4px;
+}
+
+.localisation_icone {
+    margin-right: 10px;
+}
+
+.reservation {
+    background-color: #f6f6f6;
+    text-align: center;
+    margin: 0;
+    padding: 20px 10px 20px 10px;
+}
+
+section {
+    margin: 0 30px 0 30px
+}
+
+
+.number_icone {
+    align-items: center;
+    background-color: $violet_number_icone;
+    border-radius: 50px;
+    color: #fff;
+    margin: 20px 20px 20px -30px;
+    padding: 5px;
+    width: 10px;
+    height: 10px;
+}
+
+.fonctionnement_icone {
+    color: $gris_buttons_icone;
+    margin-right: 10px;
+}
+
+.fonctionnement_icone:hover {
+    color: $violet_number_icone
+}
+
+.restaurant {
+    background-color: $gris_background;
+    margin-bottom: 50px;
+}

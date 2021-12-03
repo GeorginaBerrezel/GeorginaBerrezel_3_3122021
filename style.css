@@ -1,0 +1,106 @@
+/* GENERALE */
+h1 {
+    font-family: 'shrikhand';
+}
+
+h2 {
+    font-family: 'shrikhand';
+}
+
+h3 {
+    font-family: 'roboto';
+    font-weight: 900;
+}
+
+h4 {
+    font-family: 'roboto';
+    font-weight: 100;
+}
+
+h5 {
+    font-family: 'roboto';
+    font-weight: 500;
+}
+
+p {
+    font-family: 'roboto';
+    font-weight: 100;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    padding: 20px;
+    text-align: center;
+}
+
+.localisation {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background-color: #eaeaea;
+    padding: 5px;
+    margin-top: 4px;
+}
+
+.reservation {
+    background-color: #f6f6f6;
+    text-align: center;
+    margin: 0;
+    padding: 20px 10px 20px 10px;
+}
+
+button {
+    border-radius: 25px;
+    padding: 0px 20px 0 20px;
+}
+
+.button_explorer {
+    background: linear-gradient(150deg, #FF79DA, #9356DC);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+section {
+    margin: 0 30px 0 30px
+}
+
+.button_fonctionnement {
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    display: flex;
+    margin: 0 0 20px 0;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button_fonctionnement:hover {
+    background-color: #f5edff;
+}
+
+.number_icone {
+    background-color: #9356DC;
+    border-radius: 50px;
+    color: #fff;
+    margin: 20px 20px 20px -30px;
+    padding: 5px;
+    text-align: center;
+    width: 10px;
+    height: 10px;
+}
+
+.fonctionnement_icone {
+    color: #7e7e7e;
+}
