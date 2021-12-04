@@ -121,13 +121,15 @@ section {
 
 .menu {
     background-color: $gris_background;
-    border-radius: 30px 30px 0 0;
+    border-radius: 40px 40px 0 0;
     padding: 10px 20px 20px 20px;
+    margin-top: -30px;
 }
 
 .menu_titre {
     align-items: center;
     display: flex;
+    margin-top: 10px;
 
      &i {
         margin-left: 20px;

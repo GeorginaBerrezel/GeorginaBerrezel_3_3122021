@@ -122,13 +122,15 @@ section {
 
 .menu {
   background-color: #eaeaea;
-  border-radius: 30px 30px 0 0;
+  border-radius: 40px 40px 0 0;
   padding: 10px 20px 20px 20px;
+  margin-top: -30px;
 }
 
 .menu_titre {
   align-items: center;
   display: flex;
+  margin-top: 10px;
 }
 .menu_titrei {
   margin-left: 20px;
@@ -173,7 +175,7 @@ button {
 }
 
 .button_fonctionnement {
-  align-items: center;
+  text-align: center;
   background-color: #f6f6f6;
   border-radius: 20px;
   border: none;
@@ -188,6 +190,20 @@ button {
   background-color: #f5edff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   transition: 1s;
+}
+
+/*MENU*/
+.button_commander {
+  align-items: center;
+  background: linear-gradient(150deg, #FF79DA, #9356DC);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.button_commander:hover {
+  background: linear-gradient(150deg, #ffa2e5, #a375d9);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: 0, 5s;
 }
 
 .restaurant_card {
@@ -247,7 +263,7 @@ button {
 }
 
 /* MENU A LA FRANCAISE */
-.entree_card {
+.card {
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
@@ -262,8 +278,9 @@ button {
   padding: 20px;
 }
 
-.logo_ohmyfood {
+.logo_ohmyfood img {
   color: #fff;
+  width: 50%;
 }
 
 .footer_proposer {

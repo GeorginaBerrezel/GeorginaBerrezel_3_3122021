@@ -21,7 +21,7 @@ button {
 }
 
 .button_fonctionnement {
-    align-items: center;
+    text-align: center;
     background-color: $gris_buttons;
     border-radius: 20px;
     border: none;
@@ -37,5 +37,21 @@ button {
         background-color: $violet_hover_buttons;
         box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
         transition: 1s;
+    }
+}
+
+/*MENU*/
+
+.button_commander {
+    align-items: center;
+    background: linear-gradient(150deg, $rose_buttons, $violet_number_icone);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(150deg, $rose_light, $violet_light);
+        box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+        transition: 0,5s;
     }
 }
