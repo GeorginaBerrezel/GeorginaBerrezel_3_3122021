@@ -28,6 +28,16 @@ p {
   font-weight: 100;
 }
 
+hr {
+  text-align: left;
+  background-color: #99e2d0;
+  border: none;
+  left: auto;
+  margin-top: -15px;
+  height: 4px;
+  width: 10%;
+}
+
 body {
   font-family: "roboto", sans-serif;
   font-weight: 100;
@@ -106,6 +116,23 @@ section {
 .cover_menu img {
   width: 100%;
   object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.menu {
+  background-color: #eaeaea;
+  border-radius: 30px 30px 0 0;
+  padding: 10px 20px 20px 20px;
+}
+
+.menu_titre {
+  align-items: center;
+  display: flex;
+}
+.menu_titrei {
+  margin-left: 20px;
+  right: 0;
 }
 
 /* Mobile.css
@@ -217,6 +244,16 @@ button {
 .restaurant_icone .heart-fill:hover .heart-fill {
   transform: scale(1);
   cursor: pointer;
+}
+
+/* MENU A LA FRANCAISE */
+.entree_card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 0 10px 0 10px;
+  margin-bottom: 20px;
 }
 
 .footer_ohmyfood {
