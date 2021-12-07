@@ -127,14 +127,21 @@ section {
   margin-top: -30px;
 }
 
-.menu_titre {
+.menu__title {
   align-items: center;
   display: flex;
   margin-top: 10px;
 }
-.menu_titrei {
-  margin-left: 20px;
-  right: 0;
+.menu__title .menu__title--heart {
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+}
+
+.titre_underline {
+  width: 2.5rem;
+  border-top: 3px solid #99e2d0;
+  margin: -0.5rem 0 0 0;
 }
 
 /* Mobile.css
@@ -269,7 +276,7 @@ button {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
   display: flex;
   padding: 0 10px 0 10px;
-  margin-bottom: 20px;
+  margin: 20px 0 20px 0;
 }
 
 .footer_ohmyfood {

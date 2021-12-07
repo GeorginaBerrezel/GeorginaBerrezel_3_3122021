@@ -126,13 +126,21 @@ section {
     margin-top: -30px;
 }
 
-.menu_titre {
+.menu__title {
     align-items: center;
     display: flex;
     margin-top: 10px;
 
-     &i {
-        margin-left: 20px;
-        right: 0;
-    }
+        .menu__title--heart {
+            cursor: pointer;
+            position: absolute;
+            right: 30px;
+        }
+
+}
+
+.titre_underline {
+    width: 2.5rem;
+    border-top: 3px solid $vert_badge_fond;
+    margin: -.5rem 0 0 0;
 }
