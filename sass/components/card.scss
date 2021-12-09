@@ -34,19 +34,21 @@
 
 .restaurant_icone {
     align-items: center;
-    position: relative;
+    font-size: 1.5rem;
+    position: absolute;
     right: 1rem;
+    bottom: 1rem;
 
 }
 
-.restaurant_icone i {
-    text-align: right;
+/*.restaurant_icone i {
     position: absolute;
     top: 20px;
     left: 0;
+    right: 3rem;
     font-size: 2rem;
 }
-
+*/
 .restaurant_icone .heart-fill {
     transform: scale(0);
     transition: 0.5s;
@@ -69,4 +71,12 @@
     display: flex;
     padding: 0 10px 0 10px;
     margin: 20px 0 20px 0;
+}
+
+.card_prix {
+    align-items: center;
+    font-size: 1.5rem;
+    position: relative;
+    right: 1rem;
+    bottom: 1rem;
 }
