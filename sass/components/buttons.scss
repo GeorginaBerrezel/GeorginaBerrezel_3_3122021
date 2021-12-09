@@ -21,17 +21,16 @@ button {
 }
 
 .button_fonctionnement {
-    text-align: center;
+    align-items: center;
+    display: flex;
     background-color: $gris_buttons;
     border-radius: 20px;
     border: none;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.125);
-    display: flex;
+    text-align: center;
     margin: 0 0 20px 0;
     width: 100%;
-    text-align: center;
     cursor: pointer;
-
 
     &:hover {
         background-color: $violet_hover_buttons;

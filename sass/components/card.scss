@@ -19,9 +19,9 @@
     background-color: $vert_badge_fond;
     border-radius: 3px;
     color: $vert_bagde_text;
-    top: 15px;
+    top: 12px;
     right: 10px;
-    padding: 0 5px 0 5px;
+    padding: 5px;
     position: absolute;
 }
 
@@ -35,7 +35,7 @@
 .restaurant_icone {
     align-items: center;
     position: relative;
-    /*right: auto;*/
+    right: 1rem;
 
 }
 

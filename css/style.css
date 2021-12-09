@@ -17,11 +17,15 @@ h3 {
 }
 
 h4 {
-  font-weight: 100;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 5px;
 }
 
 h5 {
-  font-weight: 500;
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 2px;
 }
 
 p {
@@ -182,15 +186,15 @@ button {
 }
 
 .button_fonctionnement {
-  text-align: center;
+  align-items: center;
+  display: flex;
   background-color: #f6f6f6;
   border-radius: 20px;
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.125);
-  display: flex;
+  text-align: center;
   margin: 0 0 20px 0;
   width: 100%;
-  text-align: center;
   cursor: pointer;
 }
 .button_fonctionnement:hover {
@@ -233,9 +237,9 @@ button {
   background-color: #99e2d0;
   border-radius: 3px;
   color: #008766;
-  top: 15px;
+  top: 12px;
   right: 10px;
-  padding: 0 5px 0 5px;
+  padding: 5px;
   position: absolute;
 }
 
@@ -248,7 +252,7 @@ button {
 .restaurant_icone {
   align-items: center;
   position: relative;
-  /*right: auto;*/
+  right: 1rem;
 }
 
 .restaurant_icone i {
@@ -285,14 +289,17 @@ button {
   padding: 20px;
 }
 
-.logo_ohmyfood img {
-  color: #fff;
-  width: 50%;
+.logo__ohmyfood--blanc {
+  width: 40%;
+  margin-bottom: 20px;
 }
 
 .footer_proposer {
   align-items: center;
   display: flex;
+  line-height: 2px;
+  margin: -20px;
+  padding-left: 20px;
 }
 
 .footer_icone {
