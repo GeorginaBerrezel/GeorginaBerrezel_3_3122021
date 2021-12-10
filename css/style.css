@@ -25,11 +25,12 @@ h4 {
 h5 {
   font-weight: 100;
   font-size: 1rem;
-  line-height: 2px;
+  line-height: 0.1rem;
 }
 
 p {
   font-weight: 100;
+  margin: 0.3rem;
 }
 
 hr {
@@ -269,14 +270,15 @@ button {
   height: 80px;
 }
 
+/*
 .restaurant_icone {
-  align-items: center;
-  font-size: 1.5rem;
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
+    align-items: center;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
 }
-
+*/
 /*.restaurant_icone i {
     position: absolute;
     top: 20px;
@@ -285,41 +287,30 @@ button {
     font-size: 2rem;
 }
 */
-.restaurant_icone .heart-fill {
-  transform: scale(0);
-  transition: 0.5s;
-  color: linear-gradient(150deg, #FF79DA, #9356DC);
-}
-.restaurant_icone .heart-fill:hover .heart-fill {
-  transform: scale(1);
-  cursor: pointer;
-}
-
-/* MENU A LA FRANCAISE */
-.card_alafrancaise {
-  cursor: pointer;
-}
-
-.card {
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
-  display: flex;
-  padding: 0 10px 0 10px;
-  margin: 20px 0 20px 0;
-}
-
-.card_prix {
+.restaurant_icone {
   align-items: center;
   font-size: 1.5rem;
-  position: relative;
-  /*right: 1rem;*/
-  bottom: -1.8rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
-.card__animation {
-  visibility: hidden;
+.heart-fill {
+  transform: scale(0);
+  color: linear-gradient(150deg, #FF79DA, #9356DC);
 }
+.heart-fill:hover .heart-fill {
+  transform: scale(1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.far fa-heart .fas fa-heart heart-fill {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .footer_ohmyfood {
   background-color: #353535;
   color: #fff;
@@ -331,12 +322,11 @@ button {
   margin: 10px 0 30px 0;
 }
 
-.footer_proposer {
+.footer__element {
   align-items: center;
   display: flex;
-  line-height: 2px;
-  margin: -20px;
-  padding-left: 20px;
+  line-height: 2rem;
+  /*padding-left: 20px;*/
 }
 
 .footer_icone {
@@ -351,6 +341,102 @@ a {
 }
 a:hover {
   color: #7e7e7e;
+}
+
+/* MENU A LA FRANCAISE */
+.card_alafrancaise {
+  cursor: pointer;
+}
+
+/*
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0, 0.1);
+    display: flex;
+    padding: 0 10px 0 10px;
+    margin: 20px 0 20px 0;
+
+}
+
+.card_text {
+    flex-grow: 1;
+}
+*/
+/*
+.card_prix {
+    align-items: center;
+    /*font-size: 1.5rem;*/
+/*   position: relative;    */
+/*right: 1rem;*/
+/*bottom: -1.8rem;*/
+/*
+.card_select {
+    transition: rotate (0deg);
+    transition: 0.5s;
+
+        &:hover {
+            transition: rotate (360deg)
+        }
+}
+*/
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 0 0 0 10px;
+  margin: 20px 0 20px 0;
+  opacity: 100%;
+  transition: 1.2s;
+  transition-delay: 0.3s;
+  /* transition: 1s;
+      animation: fadein 1.2s .3s ease-out both,transform .3s;
+  */
+}
+.card:hover .card__animation {
+  background-color: #99e2d0;
+  width: 80px;
+}
+
+.card_text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 10px;
+  min-width: 0;
+}
+
+.card_prix {
+  align-items: center;
+  display: flex;
+  /*font-size: 1.5rem;*/
+  padding-right: 1rem;
+  position: relative;
+}
+
+.card__animation {
+  align-items: center;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  transition: 0.5s;
+  width: 0;
+}
+
+.card_select {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: rotate(0deg);
+  transition: 0.5s;
+}
+.card_select:hover {
+  transition: rotate(360deg);
 }
 
 /*# sourceMappingURL=style.css.map */
