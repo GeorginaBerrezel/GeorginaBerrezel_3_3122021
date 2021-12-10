@@ -112,6 +112,18 @@ section {
 }
 
 /*PAGE MENU*/
+.nav {
+  align-items: center;
+  display: flex;
+}
+
+.nav__return {
+  margin: 0 50px 0 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #353535;
+}
+
 .cover_menu {
   height: 200px;
   width: 100%;
@@ -140,6 +152,7 @@ section {
   cursor: pointer;
   position: absolute;
   right: 30px;
+  font-size: 1.5rem;
 }
 
 .title {
@@ -192,7 +205,7 @@ button {
 .button_fonctionnement {
   align-items: center;
   display: flex;
-  background-color: #f6f6f6;
+  background-color: #eaeaea;
   border-radius: 20px;
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.125);
@@ -208,14 +221,17 @@ button {
 }
 
 /*MENU*/
-.button_commander {
-  align-items: center;
+.button__center {
+  text-align: center;
+}
+
+.button__center--commander {
   background: linear-gradient(150deg, #FF79DA, #9356DC);
   border: none;
   color: #fff;
   cursor: pointer;
 }
-.button_commander:hover {
+.button__center--commander:hover {
   background: linear-gradient(150deg, #ffa2e5, #a375d9);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   transition: 0, 5s;
@@ -293,10 +309,13 @@ button {
   align-items: center;
   font-size: 1.5rem;
   position: relative;
-  right: 1rem;
-  bottom: 1rem;
+  /*right: 1rem;*/
+  bottom: -1.8rem;
 }
 
+.card__animation {
+  visibility: hidden;
+}
 .footer_ohmyfood {
   background-color: #353535;
   color: #fff;

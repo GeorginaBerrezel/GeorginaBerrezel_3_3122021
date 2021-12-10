@@ -41,8 +41,11 @@ button {
 
 /*MENU*/
 
-.button_commander {
-    align-items: center;
+.button__center {
+    text-align: center;
+}
+
+.button__center--commander {
     background: linear-gradient(150deg, $rose_buttons, $violet_number_icone);
     border: none;
     color: #fff;
