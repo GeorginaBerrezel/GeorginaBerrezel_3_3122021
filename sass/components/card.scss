@@ -52,7 +52,7 @@
 */
 
 
-.restaurant_icone {
+.icone__coeur {
     align-items: center;
     font-size: 1.5rem;
     position: absolute;
@@ -62,10 +62,9 @@
 
 .heart-fill {
     transform: scale(0);
-    color: linear-gradient(150deg, $rose_buttons, $violet_number_icone);
-        
-         
+       
         &:hover .heart-fill {
+            color: linear-gradient(150deg, $rose_buttons, $violet_number_icone);
             transform: scale(1);
             transition: 0.5s;
             cursor: pointer;

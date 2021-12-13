@@ -287,7 +287,7 @@ button {
     font-size: 2rem;
 }
 */
-.restaurant_icone {
+.icone__coeur {
   align-items: center;
   font-size: 1.5rem;
   position: absolute;
@@ -297,9 +297,9 @@ button {
 
 .heart-fill {
   transform: scale(0);
-  color: linear-gradient(150deg, #FF79DA, #9356DC);
 }
 .heart-fill:hover .heart-fill {
+  color: linear-gradient(150deg, #FF79DA, #9356DC);
   transform: scale(1);
   transition: 0.5s;
   cursor: pointer;
