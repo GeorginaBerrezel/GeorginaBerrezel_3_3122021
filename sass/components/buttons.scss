@@ -57,3 +57,26 @@ button {
         transition: 0,5s;
     }
 }
+
+/* ANIMATION COEURS */
+
+.heart__icon {
+    position:relative;
+}
+
+.heart__icon i {
+    position: absolute;
+    top: -1rem;
+    left: -2rem;
+    font-size: 2rem;
+}
+
+.heart__icon .heart-fill {
+    transform: scale(0);
+    transition: 0.5s;
+    color: $rose_buttons;
+}
+
+.heart__icon:hover .heart-fill {
+    transform: scale(1.1);
+}

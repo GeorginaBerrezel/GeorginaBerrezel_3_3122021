@@ -15,6 +15,16 @@
     }
 }
 
+
+.card_alafrancaise {
+    color: black;
+
+        &:hover {
+            color: $gris_buttons_icone;
+        }
+}
+
+
 .bagde_nouveau {
     background-color: $vert_badge_fond;
     border-radius: 3px;
@@ -28,51 +38,20 @@
 
 .restaurant_bottom {
     display: flex;
+    margin-top: 20px;
     padding: 0 20px 0 20px;
     height: 80px;
 }
 
-/*
+
 .restaurant_icone {
     align-items: center;
     font-size: 1.5rem;
     position: absolute;
     right: 1rem;
-    bottom: 1rem;
-}
-*/
-
-/*.restaurant_icone i {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    right: 3rem;
-    font-size: 2rem;
-}
-*/
-
-
-
-.heart__icon {
-    position:relative;
+    bottom: 3rem;
 }
 
-.heart__icon i {
-    position: absolute;
-    top: -1rem;
-    left: -2rem;
-    font-size: 2rem;
-}
-
-.heart__icon .heart-fill {
-    transform: scale(0);
-    transition: 0.5s;
-    color: $rose_buttons;
-}
-
-.heart__icon:hover .heart-fill {
-    transform: scale(1.1);
-}
 
 /*
 .icone__heart {

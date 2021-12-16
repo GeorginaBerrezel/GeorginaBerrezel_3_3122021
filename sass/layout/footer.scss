@@ -24,9 +24,17 @@ a {
     cursor: pointer;
     color: #fff;
     line-height: normal;
-    text-decoration: none;    
+    text-decoration: none;   
 
         &:hover {
         color: $gris_buttons_icone;
+        }
+}
+
+.card_alafrancaise {
+    color: black;
+
+        &:hover {
+            color: $gris_buttons_icone;
         }
 }
