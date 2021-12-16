@@ -287,30 +287,54 @@ button {
     font-size: 2rem;
 }
 */
-.icone__coeur {
-  align-items: center;
-  font-size: 1.5rem;
+.heart__icon {
+  position: relative;
+}
+
+.heart__icon i {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  top: -1rem;
+  left: -2rem;
+  font-size: 2rem;
+}
+
+.heart__icon .heart-fill {
+  transform: scale(0);
+  transition: 0.5s;
+  color: #FF79DA;
+}
+
+.heart__icon:hover .heart-fill {
+  transform: scale(1.1);
+}
+
+/*
+.icone__heart {
+    align-items: center;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .heart-fill {
-  transform: scale(0);
-}
-.heart-fill:hover .heart-fill {
-  color: linear-gradient(150deg, #FF79DA, #9356DC);
-  transform: scale(1);
-  transition: 0.5s;
-  cursor: pointer;
+    transform: scale(0);
+
+        &:hover .heart-fill {
+            color: linear-gradient(150deg, $rose_buttons, $violet_number_icone);
+            transform: scale(1);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
 }
 
 .far fa-heart .fas fa-heart heart-fill {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
-
+*/
 .footer_ohmyfood {
   background-color: #353535;
   color: #fff;

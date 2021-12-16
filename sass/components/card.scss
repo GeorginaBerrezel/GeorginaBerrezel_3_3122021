@@ -52,7 +52,30 @@
 */
 
 
-.icone__coeur {
+
+.heart__icon {
+    position:relative;
+}
+
+.heart__icon i {
+    position: absolute;
+    top: -1rem;
+    left: -2rem;
+    font-size: 2rem;
+}
+
+.heart__icon .heart-fill {
+    transform: scale(0);
+    transition: 0.5s;
+    color: $rose_buttons;
+}
+
+.heart__icon:hover .heart-fill {
+    transform: scale(1.1);
+}
+
+/*
+.icone__heart {
     align-items: center;
     font-size: 1.5rem;
     position: absolute;
@@ -77,3 +100,4 @@
     right: 0;
     bottom: 0;
 }
+*/
