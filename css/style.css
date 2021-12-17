@@ -253,7 +253,7 @@ button {
 .heart__icon .heart-fill {
   transform: scale(0);
   transition: 0.5s;
-  color: #FF79DA;
+  color: #a375d9;
 }
 
 .heart__icon:hover .heart-fill {
@@ -421,9 +421,8 @@ a:hover {
   opacity: 100%;
   transition: 1.2s;
   transition-delay: 0.3s;
-  /* transition: 1s;
-      animation: fadein 1.2s .3s ease-out both,transform .3s;
-  */
+  transition: all 1.5s;
+  animation: fadein 1.2s 0.3s ease-out both, transform 0.3s;
 }
 .card:hover .card__animation {
   background-color: #99e2d0;
