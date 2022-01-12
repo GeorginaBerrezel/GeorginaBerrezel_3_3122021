@@ -63,12 +63,16 @@
     justify-content: center;
     flex-direction: column;
     flex-grow: 1;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     padding: 10px;
     min-width: 0;
+
+    & p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
 }
+
 
 .card_prix {
     align-items: center;
@@ -88,13 +92,10 @@
     width: 0;  
 }
 
-.card_select {
+.card_select i {
     color: #fff;
     font-size: 1.5rem;
-    transition: rotate(0deg);
     transition: 0.5s;
+    transform: rotate(360deg);
 
-        &:hover {
-            transition: rotate(360deg);
-        }
 }
