@@ -60,19 +60,18 @@ nav {
 
 /*spinner*/
 .spinner {
+  align-items: center;
   animation-duration: 5s;
   animation-name: spinner;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
   position: absolute;
   top: 0;
   bottom: 0;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
-  display: flex;
-  z-index: 1;
-  /*opacity: 0;*/
+  /* z-index: 1;*/
 }
 
 @keyframes spinner {
@@ -82,12 +81,8 @@ nav {
   80% {
     opacity: 0;
   }
-  /* from {
-       opacity: 1;
-   }*/
   to {
     opacity: 0;
-    /*transform: rotate(360deg);*/
   }
 }
 .spinner::before {
