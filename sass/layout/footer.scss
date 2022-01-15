@@ -1,6 +1,6 @@
 .footer_ohmyfood {
     background-color: $gris_footer;
-    color: #fff;
+    color: $white;
     padding: 20px;
 }
 
@@ -22,7 +22,7 @@
 
 a {     
     cursor: pointer;
-    color: #fff;
+    color: $white;
     line-height: normal;
     text-decoration: none;   
 

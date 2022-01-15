@@ -40,7 +40,7 @@
 */
 
 .card {
-    background-color: #fff;
+    background-color: $white;
     border-radius: 15px;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0, 0.1);
     display: flex;
@@ -57,7 +57,7 @@
     }
 
     .card_select i {
-        color: #fff;
+        color: $white;
         font-size: 1.5rem;
         transition: 0.5s;    
     }

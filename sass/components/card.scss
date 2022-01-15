@@ -1,5 +1,5 @@
 .restaurant_card {
-    background-color: #fff;
+    background-color: $white;
     border-radius: 20px;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.125);
     margin-bottom: 20px;
@@ -17,7 +17,7 @@
 
 
 .card_alafrancaise {
-    color: black;
+    color: $black;
 
         &:hover {
             color: $gris_buttons_icone;

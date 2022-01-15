@@ -1,4 +1,5 @@
 /* Font family */
+/* couleur basic */
 /* couleur de fond hearder dans localisation */
 /* couleur des boutons fonctionnement */
 /* couleur bagde */
@@ -52,7 +53,7 @@ body {
 }
 
 nav {
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 20px;
   text-align: center;
@@ -65,7 +66,7 @@ nav {
   animation-name: spinner;
   animation-fill-mode: forwards;
   animation-delay: 1s;
-  background-color: #fff;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -98,7 +99,7 @@ nav {
   box-sizing: border-box;
   position: absolute;
   border-radius: 50%;
-  border: 6px solid #fff;
+  border: 6px solid #ffffff;
   border-color: #9356DC transparent #FF79DA transparent;
   animation: spinner 1.2s linear infinite;
   /*
@@ -144,7 +145,7 @@ section {
   align-items: center;
   background-color: #9356DC;
   border-radius: 50px;
-  color: #fff;
+  color: #ffffff;
   display: flex;
   margin: 20px 20px 20px -30px;
   padding: 5px;
@@ -286,15 +287,16 @@ button {
 }
 
 .button__center--commander {
-  background: linear-gradient(150deg, #FF79DA, #9356DC);
+  background-color: #656565;
+  background-image: linear-gradient(150deg, rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
   border: none;
   color: #fff;
+  transition: 0.5s;
   cursor: pointer;
 }
 .button__center--commander:hover {
-  background: linear-gradient(150deg, #ffa2e5, #a375d9);
+  background-color: white;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  transition: 0, 5s;
 }
 
 /* ANIMATION COEURS */
@@ -320,7 +322,7 @@ button {
 }
 
 .restaurant_card {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.125);
   margin-bottom: 20px;
@@ -336,7 +338,7 @@ button {
 }
 
 .card_alafrancaise {
-  color: black;
+  color: #000000;
 }
 .card_alafrancaise:hover {
   color: #7e7e7e;
@@ -396,7 +398,7 @@ button {
 */
 .footer_ohmyfood {
   background-color: #353535;
-  color: #fff;
+  color: #ffffff;
   padding: 20px;
 }
 
@@ -418,7 +420,7 @@ button {
 
 a {
   cursor: pointer;
-  color: #fff;
+  color: #ffffff;
   line-height: normal;
   text-decoration: none;
 }
@@ -464,7 +466,7 @@ a:hover {
 }
 */
 .card {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -480,7 +482,7 @@ a:hover {
   background-color: #99e2d0;
 }
 .card .card_select i {
-  color: #fff;
+  color: #ffffff;
   font-size: 1.5rem;
   transition: 0.5s;
 }
