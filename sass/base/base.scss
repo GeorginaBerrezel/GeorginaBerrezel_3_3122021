@@ -56,7 +56,9 @@ nav {
     padding: 20px;
     text-align: center;
 }
-
+.fas {
+    font-size: 23px;
+}
 
 /*spinner*/
 
@@ -155,10 +157,11 @@ section {
     border-radius: 50px;
     color: $white;
     display: flex;
+    justify-content: center;
     margin: 20px 20px 20px -30px;
     padding: 5px;
-    width: 13px;
-    height: 13px;
+    width: 1.2rem;
+    height: 1.2rem;
 }
 
 .fonctionnement {
@@ -234,4 +237,57 @@ section {
     width: 2.5rem;
     border-top: 3px solid $vert_badge_fond;
     margin: -.5rem 0 0 0;
+}
+
+@media all and (min-width: 1280px)
+ {
+     .content {
+        max-width: 1280px;
+        margin: 0 auto;
+       /* padding: 0 40px 0 40px;*/
+        align-content: center;
+     }
+
+     .button__fonctionnement--section {
+         display: flex;
+         align-items: center;
+         align-content: space-around;
+         margin: 0;
+    }
+
+    .restaurant__responsive {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .restaurant_card {
+        width: 330px;
+    }
+ }
+
+
+ @media all and (max-width: 1199.5px) and (min-width:768px) {
+    .content {
+        max-width: 768px;
+        margin: 0 auto;
+       /* padding: 0 40px 0 40px;*/
+        align-content: center;
+     }
+
+     .button__fonctionnement--section {
+         display: flex;
+         align-items: center;
+         align-content: space-around;
+         margin: 0;
+    }
+
+    .restaurant__responsive {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .restaurant_card {
+        width: 220px;
+    }
 }

@@ -59,6 +59,10 @@ nav {
   text-align: center;
 }
 
+.fas {
+  font-size: 23px;
+}
+
 /*spinner*/
 .spinner {
   align-items: center;
@@ -147,10 +151,11 @@ section {
   border-radius: 50px;
   color: #ffffff;
   display: flex;
+  justify-content: center;
   margin: 20px 20px 20px -30px;
   padding: 5px;
-  width: 13px;
-  height: 13px;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 .fonctionnement {
@@ -225,6 +230,54 @@ section {
   margin: -0.5rem 0 0 0;
 }
 
+@media all and (min-width: 1280px) {
+  .content {
+    max-width: 1280px;
+    margin: 0 auto;
+    /* padding: 0 40px 0 40px;*/
+    align-content: center;
+  }
+
+  .button__fonctionnement--section {
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    margin: 0;
+  }
+
+  .restaurant__responsive {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .restaurant_card {
+    width: 330px;
+  }
+}
+@media all and (max-width: 1199.5px) and (min-width: 768px) {
+  .content {
+    max-width: 768px;
+    margin: 0 auto;
+    /* padding: 0 40px 0 40px;*/
+    align-content: center;
+  }
+
+  .button__fonctionnement--section {
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    margin: 0;
+  }
+
+  .restaurant__responsive {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .restaurant_card {
+    width: 220px;
+  }
+}
 /* Mobile.css
 ---------
 */
@@ -271,7 +324,7 @@ button {
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.125);
   text-align: center;
-  margin: 0 0 20px 0;
+  margin: 0 20px 20px 0;
   width: 100%;
   cursor: pointer;
 }
@@ -327,7 +380,7 @@ button {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.125);
   margin-bottom: 20px;
   position: relative;
-  width: 100%;
+  /* width: 100%;*/
 }
 .restaurant_card img {
   object-fit: cover;
@@ -335,6 +388,10 @@ button {
   width: 100%;
   height: 200px;
   border-radius: 20px 20px 0 0;
+}
+.restaurant_card:hover {
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .card_alafrancaise {
@@ -403,7 +460,7 @@ button {
 }
 
 .logo__ohmyfood--blanc {
-  width: 40%;
+  width: auto;
   margin: 10px 0 30px 0;
 }
 
