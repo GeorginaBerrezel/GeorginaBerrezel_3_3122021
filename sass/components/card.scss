@@ -1,18 +1,115 @@
-.restaurant__responsive {
-    /*display: flex;*/
-  /*  flex-wrap: wrap;
-    row-gap: 40px;
-    column-gap: 40px;*/
+/* CARD DES MENUS*/
+.card {
+    background-color: $white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0, 0.1);
+    display: flex;
+    opacity: 0;
+    padding: 0 0 0 10px;
+    margin: 20px 0 20px 0;
+    transition: (1.2s);
+    transition-delay: .3s;
+    transition: all 1.5s;
+    animation: card-menu-appear 1s forwards;
+
+    .card__animation {
+        background-color: $vert_badge_fond;
+    }
+
+    .card_select i {
+        color: $white;
+        font-size: 1.5rem;
+        transition: 0.5s;    
+    }
+
+    &:hover  .card__animation{
+        width: 80px;
+    }
+
+    &:hover  .card_select i{
+        transform: rotate(360deg);
+    }
+
+    &:nth-child(3) {
+        animation-delay: 300ms;
+    }
+
+    &:nth-child(4) {
+        animation-delay: 600ms;
+    }
+
 }
 
-@media all and (max-width: 768px)
- { 
-.restaurant_card {
-    width: 45%;
+.card_text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    min-width: 0;
+
+    & p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
 }
+
+
+.card_prix {
+    align-items: center;
+    display: flex;    padding-right: 1rem;
+    position: relative;
+}
+
+.card__animation {
+    align-items: center;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.5s;
+    width: 0;  
+}
+
+@keyframes card-menu-appear {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
  }
 
-.restaurant_card {
+    to {
+        opacity: 1;
+    }
+}
+
+@media all and (min-width: 1280px) {
+    .section__menus{
+        display: flex;
+        justify-content: space-between;
+    }
+   
+    .card {
+        width: 400px;
+    }
+}
+
+
+
+
+/*CARD DE LA HOME PAGE*/
+
+.card__home {
+    cursor: pointer;
+    color: $black;
+    width: 45%;
+
+        &:hover {
+            color: $gris_buttons_icone;
+        }
+}
+
+.card__restaurant--composition {
     background-color: $white;
     border-radius: 20px;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.125);
@@ -36,17 +133,6 @@
     }
 }
 
-
-
-.card_alafrancaise {
-    color: $black;
-    width: 45%;
-    /*padding: 10px;*/
-
-        &:hover {
-            color: $gris_buttons_icone;
-        }
-}
 
 
 .bagde_nouveau {
@@ -74,32 +160,3 @@
     margin-left: auto;
     margin-right: 15px;
 }
-
-
-/*
-.icone__heart {
-    align-items: center;
-    font-size: 1.5rem;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-.heart-fill {
-    transform: scale(0);
-       
-        &:hover .heart-fill {
-            color: linear-gradient(150deg, $rose_buttons, $violet_number_icone);
-            transform: scale(1);
-            transition: 0.5s;
-            cursor: pointer;
-        }
-      
-}
-
-.far fa-heart .fas fa-heart heart-fill {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-*/

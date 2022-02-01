@@ -66,8 +66,8 @@ nav {
   font-size: 23px;
 }
 
-/*test spinner */
-.loader {
+/* SPINNER */
+.spinner {
   width: 100%;
   height: 100%;
   top: 0;
@@ -78,12 +78,12 @@ nav {
   z-index: 99;
   align-items: center;
   justify-content: center;
-  animation: loading 700ms;
+  animation: spinner 500ms;
   animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 
-@keyframes loading {
+@keyframes spinner {
   0% {
     opacity: 1;
   }
@@ -92,7 +92,7 @@ nav {
     z-index: -1;
   }
 }
-.loader span {
+.spinner span {
   display: block;
   width: 20px;
   height: 20px;
@@ -102,19 +102,19 @@ nav {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.loader span:nth-child(2) {
+.spinner span:nth-child(2) {
   background: #9356DC;
 }
 
-.loader span:nth-child(3) {
+.spinner span:nth-child(3) {
   background: #FF79DA;
 }
 
-.loader span:nth-child(4) {
+.spinner span:nth-child(4) {
   background: #99E2D0;
 }
 
-.loader span:not(:last-child) {
+.spinner span:not(:last-child) {
   animation: animate 1.5s linear infinite;
 }
 
@@ -126,7 +126,7 @@ nav {
     transform: translateX(30px);
   }
 }
-.loader span:last-child {
+.spinner span:last-child {
   animation: jump 1.5s ease-in-out infinite;
 }
 
@@ -156,68 +156,6 @@ nav {
     transform: translate(-120px, 0);
   }
 }
-/*spinner*/
-/*
-.spinner {
-    align-items: center;
-    animation-duration: 3s;
-    animation-name: spinner 700ms;
-    animation-fill-mode: forwards;
-    animation-delay: 3s;
-    background-color: $black;
-    display: flex;
-    justify-content: center;
-    position: fixed; 
-    width: 100%;
-    height: 100%;
-}
-
-
-@keyframes spinner {
-    0% {
-        opacity: 1;
-        z-index: 1;
-        transform: rotate(0deg);
-
-    }
-
-    90% {
-        opacity: 0;
-        transform: rotate(360deg);
-
-    }
-
-    to {
-        opacity: 0;
-        z-index: -1;
-    }
-}
-
-  .spinner::before {
-    content: " ";
-    display: block;
-    width: 64px;
-    height: 64px;
-    margin: 8px;
-    box-sizing: border-box;
-    position: absolute;
-    border-radius: 50%;
-    border: 6px solid $white;
-    border-color: #9356DC transparent #FF79DA transparent;
-    animation: spinner 1.2s linear infinite;
-
-    /*
-    content: '';
-    background-color: #fff;
-    box-sizing: border-box;
-    position: absolute;
-    top: 300px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border-top: 2px solid #9356DC;
-    border-right: 2px solid #FF79DA;
-    animation: spinner 2s linear infinite;*/
 .localisation {
   align-items: center;
   text-align: center;
@@ -225,7 +163,6 @@ nav {
   display: flex;
   background-color: #eaeaea;
   padding: 0;
-  /*margin-top: 4px;*/
 }
 
 .localisation_icone {
@@ -237,10 +174,6 @@ nav {
   text-align: center;
   margin: 0;
   padding: 20px 10px 20px 10px;
-}
-
-section {
-  /*margin: 0 30px 0 30px*/
 }
 
 .number_icone {
@@ -274,68 +207,6 @@ section {
   padding: 30px;
 }
 
-/*PAGE MENU*/
-.nav {
-  align-items: center;
-  display: flex;
-}
-
-.nav__return {
-  margin: 0 50px 0 10px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #353535;
-}
-
-/*
-@media all and (max-width: 1199.5px) and (min-width:768px) {
-    .cover_menu {
-        min-height: 60rem;
-    }
-}
-*/
-.cover_menu {
-  height: 12rem;
-  width: 100%;
-}
-
-.cover_menu img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  position: absolute;
-  z-index: -1;
-}
-
-.menu {
-  background-color: #eaeaea;
-  border-radius: 40px 40px 0 0;
-  padding: 10px 20px 20px 20px;
-  margin-top: -30px;
-}
-
-.menu__title {
-  align-items: center;
-  display: flex;
-  margin-top: 10px;
-}
-.menu__title .menu__title--heart {
-  cursor: pointer;
-  position: absolute;
-  right: 30px;
-  font-size: 1.5rem;
-}
-
-.title {
-  margin-top: 40px;
-}
-
-.titre_underline {
-  width: 2.5rem;
-  border-top: 3px solid #99e2d0;
-  margin: -0.5rem 0 0 0;
-}
-
 @media all and (min-width: 1280px) {
   .content {
     max-width: 1280px;
@@ -351,7 +222,7 @@ section {
     margin: 0 -15px;
   }
 
-  .restaurant_card {
+  .card__restaurant--composition {
     width: 330px;
   }
 
@@ -363,7 +234,6 @@ section {
   .content {
     max-width: 768px;
     margin: 0 auto;
-    /* padding: 0 40px 0 40px;*/
     align-content: center;
   }
 
@@ -374,13 +244,9 @@ section {
     margin: 0 -15px;
   }
 
-  .restaurant__responsive {
+  .card__restaurant {
     display: flex;
     justify-content: space-between;
-  }
-
-  .restaurant_card {
-    width: 450px;
   }
 
   .logo__ohmyfood--blanc {
@@ -527,136 +393,7 @@ button {
   transform: scale(1.1);
 }
 
-.restaurant__responsive {
-  /*display: flex;*/
-  /*  flex-wrap: wrap;
-    row-gap: 40px;
-    column-gap: 40px;*/
-}
-
-@media all and (max-width: 768px) {
-  .restaurant_card {
-    width: 45%;
-  }
-}
-.restaurant_card {
-  background-color: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.125);
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-}
-.restaurant_card img {
-  object-fit: cover;
-  object-position: top;
-  width: 100%;
-  height: 200px;
-  border-radius: 20px 20px 0 0;
-}
-.restaurant_card:hover {
-  background-color: white;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.card_alafrancaise {
-  color: #000000;
-  width: 45%;
-  /*padding: 10px;*/
-}
-.card_alafrancaise:hover {
-  color: #7e7e7e;
-}
-
-.bagde_nouveau {
-  background-color: #99e2d0;
-  border-radius: 3px;
-  color: #008766;
-  top: 12px;
-  right: 10px;
-  padding: 5px;
-  position: absolute;
-}
-
-.restaurant_bottom {
-  align-items: center;
-  display: flex;
-  padding: 0 20px 0 20px;
-  height: 80px;
-}
-
-.restaurant_icone {
-  align-items: center;
-  font-size: 1.5rem;
-  margin-left: auto;
-  margin-right: 15px;
-}
-
-/*
-.icone__heart {
-    align-items: center;
-    font-size: 1.5rem;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-.heart-fill {
-    transform: scale(0);
-
-        &:hover .heart-fill {
-            color: linear-gradient(150deg, $rose_buttons, $violet_number_icone);
-            transform: scale(1);
-            transition: 0.5s;
-            cursor: pointer;
-        }
-
-}
-
-.far fa-heart .fas fa-heart heart-fill {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-*/
-.footer_ohmyfood {
-  background-color: #353535;
-  color: #ffffff;
-  padding: 20px;
-}
-
-.logo__ohmyfood--title {
-  margin: 10px 0 30px 0;
-}
-
-.footer__element {
-  align-items: center;
-  display: flex;
-  line-height: 2rem;
-  /*padding-left: 20px;*/
-}
-
-.footer_icone {
-  padding-right: 10px;
-}
-
-a {
-  cursor: pointer;
-  color: #ffffff;
-  line-height: normal;
-  text-decoration: none;
-}
-a:hover {
-  color: #7e7e7e;
-}
-
-/* MENU A LA FRANCAISE */
-.card_alafrancaise {
-  cursor: pointer;
-}
-
+/* CARD DES MENUS*/
 .card {
   background-color: #ffffff;
   border-radius: 15px;
@@ -708,7 +445,6 @@ a:hover {
 .card_prix {
   align-items: center;
   display: flex;
-  /*font-size: 1.5rem;*/
   padding-right: 1rem;
   position: relative;
 }
@@ -741,6 +477,147 @@ a:hover {
   .card {
     width: 400px;
   }
+}
+/*CARD DE LA HOME PAGE*/
+.card__home {
+  cursor: pointer;
+  color: #000000;
+  width: 45%;
+}
+.card__home:hover {
+  color: #7e7e7e;
+}
+
+.card__restaurant--composition {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.125);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.card__restaurant--composition img {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+}
+.card__restaurant--composition:hover {
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.bagde_nouveau {
+  background-color: #99e2d0;
+  border-radius: 3px;
+  color: #008766;
+  top: 12px;
+  right: 10px;
+  padding: 5px;
+  position: absolute;
+}
+
+.restaurant_bottom {
+  align-items: center;
+  display: flex;
+  padding: 0 20px 0 20px;
+  height: 80px;
+}
+
+.restaurant_icone {
+  align-items: center;
+  font-size: 1.5rem;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.footer_ohmyfood {
+  background-color: #353535;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.logo__ohmyfood--title {
+  margin: 10px 0 30px 0;
+}
+
+.footer__element {
+  align-items: center;
+  display: flex;
+  line-height: 2rem;
+  /*padding-left: 20px;*/
+}
+
+.footer_icone {
+  padding-right: 10px;
+}
+
+a {
+  cursor: pointer;
+  color: #ffffff;
+  line-height: normal;
+  text-decoration: none;
+}
+a:hover {
+  color: #7e7e7e;
+}
+
+/*PAGE MENU*/
+.nav {
+  align-items: center;
+  display: flex;
+}
+
+.nav__return {
+  margin: 0 50px 0 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #353535;
+}
+
+.cover_menu {
+  height: 12rem;
+  width: 100%;
+}
+
+.cover_menu img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.menu {
+  background-color: #eaeaea;
+  border-radius: 40px 40px 0 0;
+  padding: 10px 20px 20px 20px;
+  margin-top: -30px;
+}
+
+.menu__title {
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+}
+.menu__title .menu__title--heart {
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  font-size: 1.5rem;
+}
+
+.title {
+  margin-top: 40px;
+}
+
+.titre_underline {
+  width: 2.5rem;
+  border-top: 3px solid #99e2d0;
+  margin: -0.5rem 0 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */
