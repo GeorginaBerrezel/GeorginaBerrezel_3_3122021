@@ -5,6 +5,13 @@
     column-gap: 40px;*/
 }
 
+@media all and (max-width: 768px)
+ { 
+.restaurant_card {
+    width: 45%;
+}
+ }
+
 .restaurant_card {
     background-color: $white;
     border-radius: 20px;
@@ -13,7 +20,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-   /* width: 100%;*/
+    width: 100%;
 
     & img {
         object-fit: cover;
@@ -33,6 +40,8 @@
 
 .card_alafrancaise {
     color: $black;
+    width: 45%;
+    padding: 10px;
 
         &:hover {
             color: $gris_buttons_icone;
@@ -52,8 +61,8 @@
 
 
 .restaurant_bottom {
+    align-items: center;
     display: flex;
-    margin-top: 20px;
     padding: 0 20px 0 20px;
     height: 80px;
 }
@@ -62,9 +71,8 @@
 .restaurant_icone {
     align-items: center;
     font-size: 1.5rem;
-    position: absolute;
-    right: 1rem;
-    bottom: 3rem;
+    margin-left: auto;
+    margin-right: 15px;
 }
 
 
