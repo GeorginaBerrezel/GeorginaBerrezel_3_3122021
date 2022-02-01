@@ -351,11 +351,6 @@ section {
     margin: 0 -15px;
   }
 
-  .restaurant__responsive {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .restaurant_card {
     width: 330px;
   }
@@ -364,7 +359,7 @@ section {
     width: 20%;
   }
 }
-@media all and (max-width: 1199.5px) and (min-width: 768px) {
+@media all and (min-width: 768px) {
   .content {
     max-width: 768px;
     margin: 0 auto;
@@ -382,14 +377,10 @@ section {
   .restaurant__responsive {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 40px;
-    column-gap: 40px;
   }
 
   .restaurant_card {
     width: 450px;
-    /*flex: 40%;*/
   }
 
   .logo__ohmyfood--blanc {
@@ -573,7 +564,7 @@ button {
 .card_alafrancaise {
   color: #000000;
   width: 45%;
-  padding: 10px;
+  /*padding: 10px;*/
 }
 .card_alafrancaise:hover {
   color: #7e7e7e;
