@@ -57,9 +57,11 @@
 
 
 .card_prix {
-    align-items: center;
-    display: flex;    padding-right: 1rem;
+    align-items: flex-end;
+    display: flex;
+    padding-right: 1rem;
     position: relative;
+    padding-bottom: 10px;
 }
 
 .card__animation {

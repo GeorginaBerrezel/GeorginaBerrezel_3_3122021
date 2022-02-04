@@ -28,6 +28,7 @@ button {
     border-radius: 20px;
     border: none;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.125);
+    font-family: $font_family;
     text-align: center;
     margin: 0 0 20px 0;
     width: 100%;
@@ -126,10 +127,13 @@ button {
 .heart__icon .heart-fill {
     transform: scale(0);
     transition: 0.5s;
-    color: $violet_light;
+    background: -webkit-linear-gradient($rose_buttons_alpha, $violet_buttons_alpha);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
    
 }
 
 .heart__icon:hover .heart-fill {
-    transform: scale(1.1);  
+    transform: scale(1.1);
 }
